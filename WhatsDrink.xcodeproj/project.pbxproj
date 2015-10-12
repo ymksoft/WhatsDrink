@@ -10,9 +10,10 @@
 		48FC10631BC9B21F0031ADF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FC10621BC9B21F0031ADF0 /* main.m */; };
 		48FC10661BC9B21F0031ADF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FC10651BC9B21F0031ADF0 /* AppDelegate.m */; };
 		48FC10691BC9B21F0031ADF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FC10681BC9B21F0031ADF0 /* ViewController.m */; };
-		48FC106C1BC9B21F0031ADF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FC106A1BC9B21F0031ADF0 /* Main.storyboard */; };
+		48FC106C1BC9B21F0031ADF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FC106A1BC9B21F0031ADF0 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		48FC106E1BC9B21F0031ADF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FC106D1BC9B21F0031ADF0 /* Assets.xcassets */; };
 		48FC10711BC9B21F0031ADF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FC106F1BC9B21F0031ADF0 /* LaunchScreen.storyboard */; };
+		48FC107A1BC9B5750031ADF0 /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FC10791BC9B5750031ADF0 /* Drink.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		48FC106D1BC9B21F0031ADF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48FC10701BC9B21F0031ADF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48FC10721BC9B21F0031ADF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48FC10781BC9B5750031ADF0 /* Drink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drink.h; sourceTree = "<group>"; };
+		48FC10791BC9B5750031ADF0 /* Drink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drink.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +63,9 @@
 			children = (
 				48FC10641BC9B21F0031ADF0 /* AppDelegate.h */,
 				48FC10651BC9B21F0031ADF0 /* AppDelegate.m */,
-				48FC10671BC9B21F0031ADF0 /* ViewController.h */,
-				48FC10681BC9B21F0031ADF0 /* ViewController.m */,
+				48FC107C1BC9B58B0031ADF0 /* ViewController */,
 				48FC106A1BC9B21F0031ADF0 /* Main.storyboard */,
+				48FC107B1BC9B5800031ADF0 /* Model */,
 				48FC106D1BC9B21F0031ADF0 /* Assets.xcassets */,
 				48FC106F1BC9B21F0031ADF0 /* LaunchScreen.storyboard */,
 				48FC10721BC9B21F0031ADF0 /* Info.plist */,
@@ -77,6 +80,24 @@
 				48FC10621BC9B21F0031ADF0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48FC107B1BC9B5800031ADF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48FC10781BC9B5750031ADF0 /* Drink.h */,
+				48FC10791BC9B5750031ADF0 /* Drink.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		48FC107C1BC9B58B0031ADF0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48FC10671BC9B21F0031ADF0 /* ViewController.h */,
+				48FC10681BC9B21F0031ADF0 /* ViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +126,9 @@
 		48FC10561BC9B21F0031ADF0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					DeviceValueFieldTag,
+				);
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "YMK Soft";
 				TargetAttributes = {
@@ -151,6 +175,7 @@
 			files = (
 				48FC10691BC9B21F0031ADF0 /* ViewController.m in Sources */,
 				48FC10661BC9B21F0031ADF0 /* AppDelegate.m in Sources */,
+				48FC107A1BC9B5750031ADF0 /* Drink.m in Sources */,
 				48FC10631BC9B21F0031ADF0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +323,7 @@
 				48FC10771BC9B21F0031ADF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

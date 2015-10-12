@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Drink.h"
 
 @interface ViewController : UIViewController
+
+@property (nonatomic, strong) Drink *drink;
+
 
 
 @end
